@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Miami Tournaments</title>
+  <link rel="stylesheet" type="text/css" href="STYLE.css">
+</head>
+<body>
+
+  <div id="header" class="center">
+    <h1>Miami Tournaments</h1>
+  </div>
+  <div id="SignOut" class="center hidden">
+  <button id="signOutButton" onclick="signOut()">Sign Out</button>
+  </div>
+  <div id="SignUp" class="center">
+    <button id="signUpButton" onclick="signUp()">Sign Up</button>
+  </div>
+  <div id="logIn" class="center hidden">
+    <button id="signOutButton" onclick="signOut()">Log In</button>
+  </div>
+
+
+  <div id="loginForm" class="form-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Log In</button>
+  </div>
+
+  <div id="signUpForm" class="form-container hidden">
+    <h2>Sign Up</h2>
+    <input type="text" id="usernameS" placeholder="Username" />
+    <input type="password" id="passwordS" placeholder="Password" />
+    <button onclick="signUpS()">Sign Up</button>
+  </div>
+
+  <div id="eventForm" class="form-container hidden">
+    <h2>Create Event</h2>
+    <input type="text" id="eventName" placeholder="Event Name" />
+    <input type="date" id="eventDate" />
+    <input type="time" id="eventTime" />
+    <input type="time" id="endTime" />
+    <button onclick="addEvent()">Create Event</button>
+  </div>
+
+  <div id="eventList" class="event-list hidden">
+    <h2>Event List</h2>
+    <ul id="events">
+
+    </ul>
+  </div>
+
+  <div id="currentEvents" class="event-list hidden">
+    <h2>Current Events</h2>
+    <ul id="currentEventList"></ul>
+  </div>
+
+  <script src="CODE.js"></script>
+</body>
+</html>
